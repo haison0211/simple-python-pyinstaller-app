@@ -10,9 +10,6 @@ spec:
         - sleep
       args:
         - 99d
-    - name: pytest
-      image: qnib/pytest
-      command: ['sleep', '99d']
 '''
 ) {
 
