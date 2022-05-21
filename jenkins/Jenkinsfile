@@ -14,13 +14,11 @@ spec:
 ) {
 
     node(POD_LABEL) {
-        stage('Build python project') {
-            container('python') {
-                stage('Build') {
-                    checkout scm
-                    sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-                }  
-            }    
-        }
+        container('python') {
+            stage('Build') {
+                checkout scm
+                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
+            }  
+        }    
     }
 }
