@@ -1,11 +1,11 @@
-podTemplate(
+podTemplate(yaml:
     '''
 apiVersion: v1
 kind: Pod
 spec:
   containers:
     - name: python
-      image: 'python:alpine3.15'
+      image: 'maven:3.8.5-openjdk-11'
       command:
         - sleep
       args:
