@@ -7,9 +7,9 @@ spec:
     - name: python
       image: 'python:alpine3.15'
       command:
-        - tail
+        - sleep
       args:
-        - -f /dev/null
+        - 99d
 '''
 ) {
 
