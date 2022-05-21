@@ -5,11 +5,11 @@ kind: Pod
 spec:
   containers:
     - name: python
-      image: 'maven:3.8.5-openjdk-11'
+      image: 'python:alpine3.15'
       command:
-        - sleep
+        - tail
       args:
-        - 99d
+        - -f /dev/null
 '''
 ) {
 
